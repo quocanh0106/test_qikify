@@ -29,9 +29,11 @@ function darkenColor(color) {
 
 function handleClick() {
   clickCount++;
+  console.log("Click count:", clickCount)
   if (clickCount < 9) {
     const currentColor = window.getComputedStyle(circle).backgroundColor;
     const newColor = darkenColor(currentColor);
+    console.log("new color:", newColor)
     circle.style.backgroundColor = newColor;
   } else {
     circle.style.backgroundColor = '#000';
