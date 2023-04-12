@@ -64,6 +64,9 @@ main {
   margin-bottom: 16px;
 }
 @media (min-width: 768px) {
+  .header__container {
+    padding: 0 16px;
+  }
   .header__container__avatar {
     width: 8vw;
     height: 8vw;
